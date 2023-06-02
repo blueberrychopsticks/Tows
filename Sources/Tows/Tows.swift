@@ -4,8 +4,10 @@ import SwiftUI
 struct HelloWorld: App {
   var body: some Scene {
     WindowGroup {
-      Text("Hello World!").padding()
+      ContentView()
+        .frame(minWidth: 640, minHeight: 320)
     }
+    .windowStyle(HiddenTitleBarWindowStyle())
   }
 
   init() {
