@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug Tows",
+            "program": "${workspaceFolder:Tows}/.build/debug/Tows",
+            "args": [],
+            "cwd": "${workspaceFolder:Tows}",
+            "preLaunchTask": "swift: Build Debug Tows"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release Tows",
+            "program": "${workspaceFolder:Tows}/.build/release/Tows",
+            "args": [],
+            "cwd": "${workspaceFolder:Tows}",
+            "preLaunchTask": "swift: Build Release Tows"
+        }
+    ]
+}
